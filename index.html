@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Tris Game</title>
+
+    <!-- ANIMATIONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js"></script>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- WIN POPUPS -->
+
+    <div class="popup-container">
+        <div class="popup">
+            <h2 id="popup-message"></h2>
+
+            <div>
+                <a class="btn btn-end">Play Again</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- TITLE -->
+        <h1 class="title">Minimal Tris Game</h1>
+
+        <!-- ANIMATION -->
+        <div class="animation-container" id="animation-container">
+
+        </div>
+
+        <a href="2players.html" class="btn" style="margin-top: 50px;">Play</a>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="marchetta">Handmade coded by <a href="https://gabrielepedesini.netlify.app/" target="_blank">Gabriele Pedesini</a></div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        // Load the animation
+        const animationContainer = document.getElementById('animation-container');
+        const animation = lottie.loadAnimation({
+          container: animationContainer,
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path: 'assets/img/animation.json'  // Path to your JSON animation file
+        });
+      </script>
+
+</body>
+</html>
