@@ -401,137 +401,9 @@ function aiClick() {
         }
     } else {
 
-        // DEFENCE CONDITIONS
+        // WIN CONDITIONS
 
         let blockOpponent = 0;
-
-        if(matrix[0][0] === 'O' && matrix[0][1] === 'O' && matrix[0][2] === 'N' && blockOpponent === 0) {
-            document.querySelector('[data-number="7"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][0] === 'N' && matrix[0][1] === 'O' && matrix[0][2] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="1"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][0] === 'O' && matrix[0][1] === 'N' && matrix[0][2] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="4"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[1][0] === 'N' && matrix[1][1] === 'O' && matrix[1][2] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="2"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[1][0] === 'O' && matrix[1][1] === 'N' && matrix[1][2] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="5"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[1][0] === 'O' && matrix[1][1] === 'O' && matrix[1][2] === 'N' && blockOpponent === 0) {
-            document.querySelector('[data-number="8"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[2][0] === 'O' && matrix[2][1] === 'O' && matrix[2][2] === 'N' && blockOpponent === 0) {
-            document.querySelector('[data-number="9"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[2][0] === 'O' && matrix[2][1] === 'N' && matrix[2][2] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="6"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[2][0] === 'N' && matrix[2][1] === 'O' && matrix[2][2] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="3"]').click();
-            blockOpponent = 1;
-        }
-
-
-
-        if(matrix[0][0] === 'O' && matrix[1][0] === 'O' && matrix[2][0] === 'N' && blockOpponent === 0) {
-            document.querySelector('[data-number="3"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][0] === 'O' && matrix[1][0] === 'N' && matrix[2][0] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="2"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][0] === 'N' && matrix[1][0] === 'O' && matrix[2][0] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="1"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][1] === 'N' && matrix[1][1] === 'O' && matrix[2][1] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="4"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][1] === 'O' && matrix[1][1] === 'N' && matrix[2][1] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="5"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][1] === 'O' && matrix[1][1] === 'O' && matrix[2][1] === 'N' && blockOpponent === 0) {
-            document.querySelector('[data-number="6"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][2] === 'O' && matrix[1][2] === 'O' && matrix[2][2] === 'N' && blockOpponent === 0) {
-            document.querySelector('[data-number="9"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][2] === 'O' && matrix[1][2] === 'N' && matrix[2][2] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="8"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][2] === 'N' && matrix[1][2] === 'O' && matrix[2][2] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="7"]').click();
-            blockOpponent = 1;
-        }
-
-
-
-        if(matrix[0][0] === 'N' && matrix[1][1] === 'O' && matrix[2][2] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="1"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][0] === 'O' && matrix[1][1] === 'N' && matrix[2][2] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="5"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][0] === 'O' && matrix[1][1] === 'O' && matrix[2][2] === 'N' && blockOpponent === 0) {
-            document.querySelector('[data-number="9"]').click();
-            blockOpponent = 1;
-        }
-
-
-        if(matrix[0][2] === 'O' && matrix[1][1] === 'O' && matrix[2][0] === 'N' && blockOpponent === 0) {
-            document.querySelector('[data-number="3"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][2] === 'O' && matrix[1][1] === 'N' && matrix[2][0] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="5"]').click();
-            blockOpponent = 1;
-        }
-
-        if(matrix[0][2] === 'N' && matrix[1][1] === 'O' && matrix[2][0] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="3"]').click();
-            blockOpponent = 1;
-        }
-
-
-        // WIN CONDITIONS
 
         if(matrix[0][0] === 'X' && matrix[0][1] === 'X' && matrix[0][2] === 'N' && blockOpponent === 0) {
             document.querySelector('[data-number="7"]').click();
@@ -657,6 +529,135 @@ function aiClick() {
             document.querySelector('[data-number="3"]').click();
             blockOpponent = 1;
         }
+
+
+        // DEFENCE CONDITIONS
+
+        if(matrix[0][0] === 'O' && matrix[0][1] === 'O' && matrix[0][2] === 'N' && blockOpponent === 0) {
+            document.querySelector('[data-number="7"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][0] === 'N' && matrix[0][1] === 'O' && matrix[0][2] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="1"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][0] === 'O' && matrix[0][1] === 'N' && matrix[0][2] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="4"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[1][0] === 'N' && matrix[1][1] === 'O' && matrix[1][2] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="2"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[1][0] === 'O' && matrix[1][1] === 'N' && matrix[1][2] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="5"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[1][0] === 'O' && matrix[1][1] === 'O' && matrix[1][2] === 'N' && blockOpponent === 0) {
+            document.querySelector('[data-number="8"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[2][0] === 'O' && matrix[2][1] === 'O' && matrix[2][2] === 'N' && blockOpponent === 0) {
+            document.querySelector('[data-number="9"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[2][0] === 'O' && matrix[2][1] === 'N' && matrix[2][2] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="6"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[2][0] === 'N' && matrix[2][1] === 'O' && matrix[2][2] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="3"]').click();
+            blockOpponent = 1;
+        }
+
+
+
+        if(matrix[0][0] === 'O' && matrix[1][0] === 'O' && matrix[2][0] === 'N' && blockOpponent === 0) {
+            document.querySelector('[data-number="3"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][0] === 'O' && matrix[1][0] === 'N' && matrix[2][0] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="2"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][0] === 'N' && matrix[1][0] === 'O' && matrix[2][0] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="1"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][1] === 'N' && matrix[1][1] === 'O' && matrix[2][1] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="4"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][1] === 'O' && matrix[1][1] === 'N' && matrix[2][1] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="5"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][1] === 'O' && matrix[1][1] === 'O' && matrix[2][1] === 'N' && blockOpponent === 0) {
+            document.querySelector('[data-number="6"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][2] === 'O' && matrix[1][2] === 'O' && matrix[2][2] === 'N' && blockOpponent === 0) {
+            document.querySelector('[data-number="9"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][2] === 'O' && matrix[1][2] === 'N' && matrix[2][2] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="8"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][2] === 'N' && matrix[1][2] === 'O' && matrix[2][2] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="7"]').click();
+            blockOpponent = 1;
+        }
+
+
+
+        if(matrix[0][0] === 'N' && matrix[1][1] === 'O' && matrix[2][2] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="1"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][0] === 'O' && matrix[1][1] === 'N' && matrix[2][2] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="5"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][0] === 'O' && matrix[1][1] === 'O' && matrix[2][2] === 'N' && blockOpponent === 0) {
+            document.querySelector('[data-number="9"]').click();
+            blockOpponent = 1;
+        }
+
+
+        if(matrix[0][2] === 'O' && matrix[1][1] === 'O' && matrix[2][0] === 'N' && blockOpponent === 0) {
+            document.querySelector('[data-number="3"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][2] === 'O' && matrix[1][1] === 'N' && matrix[2][0] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="5"]').click();
+            blockOpponent = 1;
+        }
+
+        if(matrix[0][2] === 'N' && matrix[1][1] === 'O' && matrix[2][0] === 'O' && blockOpponent === 0) {
+            document.querySelector('[data-number="3"]').click();
+            blockOpponent = 1;
+        }
+        
 
 
         function rand() {
