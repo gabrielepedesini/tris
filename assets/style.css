@@ -48,6 +48,9 @@
     margin-bottom: 40px;
     user-select: none;
     text-align: center;
+
+    animation: bounceInDown;
+    animation-duration: .8s;
 }
 
 /* LINE */
@@ -69,6 +72,9 @@
     margin-bottom: 40px;
     user-select: none;
     text-align: center;
+
+    animation: bounceInDown;
+    animation-duration: .8s;
 }
 
 /* PLAYER LABEl */
@@ -167,6 +173,9 @@
     cursor: pointer;
 
     user-select: none;
+
+    animation: bounceInUp;
+    animation-duration: .8s;
 }
 
 .btn:hover {
@@ -186,11 +195,20 @@
     cursor: pointer;
 
     user-select: none;
+
+    animation: bounceInUp;
+    animation-duration: .8s;
 }
 
 .btn-white:hover {
     background-color: #d4d4d4;
     transition: .3s;
+}
+
+.home-btn {
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
 }
 
 .bottom-btn {
