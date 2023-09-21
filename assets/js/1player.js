@@ -526,7 +526,7 @@ function aiClick() {
         }
 
         if(matrix[0][2] === 'N' && matrix[1][1] === 'X' && matrix[2][0] === 'X' && blockOpponent === 0) {
-            document.querySelector('[data-number="3"]').click();
+            document.querySelector('[data-number="7"]').click();
             blockOpponent = 1;
         }
 
@@ -654,7 +654,7 @@ function aiClick() {
         }
 
         if(matrix[0][2] === 'N' && matrix[1][1] === 'O' && matrix[2][0] === 'O' && blockOpponent === 0) {
-            document.querySelector('[data-number="3"]').click();
+            document.querySelector('[data-number="7"]').click();
             blockOpponent = 1;
         }
         
@@ -775,7 +775,7 @@ function resetGame() {
     document.querySelector('.popup-container').classList.remove('show-popup');
 
     const playerLabel = document.getElementById('player-label');
-    playerLabel.textContent = `Player 1`;
+    playerLabel.textContent = `Player`;
 
     console.log('Game reset');
     console.log(matrix);
