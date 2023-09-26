@@ -352,7 +352,7 @@ function game() {
 
                 setTimeout(() => {
                     aiClick();
-                }, 1000);
+                }, 500);
             } 
             
         } else {
