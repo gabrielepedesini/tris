@@ -1,0 +1,12 @@
+{
+    "name": "Minimal Tris",
+    "short_name": "Minimal Tris",
+    "icons":
+        [
+            {"src":"/assets/img/tic-tac-toe.png","sizes":"192x192","type":"image/png"},
+            {"src":"/assets/img/tic-tac-toe.png","sizes":"512x512","type":"image/png"}
+        ],
+    "theme_color": "#fcfcfc",
+    "background_color": "#fcfcfc",
+    "display": "standalone"
+}
